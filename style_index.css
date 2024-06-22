@@ -1,0 +1,67 @@
+body {
+    font-family: 'ARIAL', sans-serif; /* Устанавливаем шрифт Arial Black для всего текста */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #E4F4B3;
+}
+.site-name {
+    margin-bottom: 60px;
+}
+#background {
+    background-color: #3E846E; /* Цвет заднего фона */
+    padding: 20px; /* Отступ вокруг контейнера */
+    border-radius: 10px; /* Закругляем углы */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+.calendar-controls {
+    text-align: center; /* Центрируем текст в блоке */
+    display: flex; /* Используем flex для вертикального выравнивания */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 90%;
+}
+.background-calendar {
+    padding-top: 20px;
+}
+.calendar button, .calendar .day-of-week {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    text-align: center;
+    border-radius: 10%;
+}
+.calendar .day-of-week {
+    background-color: none;
+    cursor: default;
+    border: 1px solid #000; /* Обводка для дня недели */
+    border-radius: 10%;
+}
+.calendar button.other-month {
+    background-color: #A3A3A3;
+}
+.calendar button:hover {
+    background-color: #ccc;
+}
+.calendar button.current-day {
+    background-color: #1565c0; /* Синий цвет для текущего дня */
+    color: white;
+    opacity: 0.8; /* Уменьшаем прозрачность */
+}
+.calendar button.weekend {
+    background-color: #b71c1c; /* Красный цвет для выходных */
+    color: white;
+    opacity: 0.8; /* Уменьшаем прозрачность */
+}
+#monthSelect, #yearSelect {
+    font-size: 16px; /* Увеличиваем размер шрифта для выпадающих списков */
+    margin-right: 10px; /* Отступ справа */
+}

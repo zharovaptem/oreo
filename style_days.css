@@ -1,0 +1,38 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #E4F4B3;
+}
+.container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #3E846E; /* Цвет заднего фона */
+        padding-right: 20px; /* Отступ вокруг контейнера */
+        padding-top: 20px; /* Отступ вокруг контейнера */
+        padding-bottom: 20px; /* Отступ вокруг контейнера */
+        border-radius: 10px; /* Закругляем углы */
+}
+.time-slot {
+        display: flex; /* Изменяем на flex для выравнивания элементов */
+        margin-bottom: 20px;
+}
+.time-slot label {
+        width: 80px; /* Устанавливаем фиксированную ширину для времени */
+        text-align: center; /* Выравниваем текст по центру горизонтально */
+        display: flex; /* Используем flex для вертикального выравнивания */
+        align-items: center; /* Центрируем по вертикали */
+        justify-content: center; /* Центрируем по горизонтали */
+}
+.time-slot input {
+        flex: 1; /* Занимает доступное пространство в строке */
+        padding: 10px;
+        font-size: 16px; /* Увеличиваем размер шрифта в полях ввода */
+}
+.tasks {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+h2.days {
+        text-align: center; /* Центрируем текст по горизонтали */
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик задач "Тайм-менеджмент"</title>
+    <link rel="stylesheet" href="style_index.css">
+    <h1 class="site-name">Планировщик задач Тайм-менеджмент</h1>
+</head>
+<body>
+
+<div id="background">
+    <div class="calendar-controls">
+        <label for="monthSelect">Месяц:</label>
+        <select aria-label="State" id="monthSelect"></select>
+        <label for="yearSelect">Год:</label>
+        <select aria-label="State" id="yearSelect"></select>
+        <button id="showButton" onclick="updateCalendar()">Показать</button>
+    </div>
+    <div class="background-calendar">
+        <div id="calendar" class="calendar"></div>
+    </div>
+</div>
+
+<script src="script_index.js"></script>
+
+</body>
+</html>
